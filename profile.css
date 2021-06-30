@@ -1,97 +1,159 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     outline: 1px solid red;
-
 }
 
-nav{
-    background-color:black;         
+nav {
+    background-color: black;
+    padding: 20px 100px;
     display: flex;
-    width: 100vw;
-    height: 50px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+ul li {
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    color: white;
+    margin-left: 200px;
+    font-size: 30px;
 }
 
-.navlinklist{
+button {
+    background-color: skyblue;
+    width: 100px;
+    font-size: 20px;
+}
+
+ul {
     display: flex;
-    justify-content: space-around;
-    width: 500px;
     list-style: none;
 }
 
-.container{
-    background-color: gray;
-    width: 800px;
-    height: 400px;
-    margin-left: 475px;
-    margin-top: 100px;
-    
-}
-
-a{
-    text-decoration: none;
+nav h1,
+.active {
     color: white;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+main {
     display: flex;
-    
+    justify-content: center;
+    gap: 50px;
+    padding: 0 300px;
+    height: 800px;
 }
 
-button{
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#usercard span {
+    font-size: 35px;
+}
+
+#usercard p {
+    font-size: 35px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
+#request {
+    width: 500px;
+}
+
+#request .cardbottom {
+    height: 200px;
+}
+
+.cardtop {
+    align-items: center;
+    display: flex;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    font-size: 24px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.cardtop img {
+    height: 150px;
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+
+.cardtop span {
+    background-color: lightgray;
     color: black;
-    background-color: skyblue;
-    height: 20px;
-    width: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    height: 30px;
+    min-width: 30px;
+    text-align: center;
+    font-weight: bold;
 }
 
-
-.border{
-    background-color: blue;
-    height: 100px;
-    width: 800px;
+.cardbottom {
+    border: 2px solid gray;
+    /* height: 300px; */
 }
 
-.border img{
-    width: 100px;
-    margin-left: 50px;
-    margin-top: 50px;
-    background-color: white;
-    border-radius: 100px;
-    padding: 5px;
-    box-shadow: 0 0 5px;
+#usercard .cardtop {
+    background-color: aqua;
 }
 
-.inforow{
-    padding-left: 50px;
+#usercard .cardbottom {
+    padding: 50px;
+    padding-top: 80px;
 }
 
-.jane{
-    margin-top: 70px;
+.cardbottom img {
+    height: 30px;
 }
 
-h2{
-    display:inline-block ;
-    margin-left: 10px;
+#education .cardbottom {
+    font-size: 22px;
+    padding: 45px;
+}
+
+#education h2 {
     margin-top: 10px;
 }
 
-.inforow img{
-    width: 15px;
-    display: inline-block;
+#education p {
+    margin-top: 10px;
 }
 
-.info{
-    margin-top: 20px;
+.user {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
 }
 
-.profile {
-    margin-top: 15px;
-    line-height: 30px;
+#connectionphoto,
+#connectionphoto2 {
+    height: 70px;
+    border-radius: 50%;
 }
 
-.profile img{
-    vertical-align: middle;
-    margin-right: 10px;
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
